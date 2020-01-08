@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp"
+    app:elevation="8dp">
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/raleway_b"
+        android:text="#3456"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/raleway_b"
+        android:text="Pawan Kumar"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_id" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="70"
+        android:textAlignment="viewEnd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/order_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/order_merchandise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/raleway"
+        android:text="BBC"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_name" />
+
+    <TextView
+        android:id="@+id/order_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/raleway_b"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="DELIVERED"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/order_total" />
+
+    <TextView
+        android:id="@+id/order_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/raleway_b"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_merchandise" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

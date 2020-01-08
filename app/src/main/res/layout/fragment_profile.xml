@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4939173" />
+
+                <TextView
+                    android:id="@+id/profile_id_x"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Rider ID"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/profile_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/profile_id_x"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Mobile"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_id_x" />
+
+                <TextView
+                    android:id="@+id/profile_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="TextView"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_id" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="TextView"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_mobile" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_name"
+                    app:layout_constraintVertical_bias="0.050000012" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway_b"
+                    android:text="Balance"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/divider" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Main"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Incentives"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Extra and Tip"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/profile_main"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway_b"
+                    android:text="TextView"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+                <TextView
+                    android:id="@+id/profile_incentives"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="TextView"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_main" />
+
+                <TextView
+                    android:id="@+id/profile_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_incentives" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway_b"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+                <Switch
+                    android:id="@+id/profile_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColorLink="#00000000"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+                <Button
+                    android:id="@+id/profile_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_bad"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/raleway_b"
+                    android:text="Logout"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33"
+                    app:layout_constraintVertical_bias="0.31" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="@font/raleway_b"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/profile_id_x"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="128dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="48dp"
+                    app:layout_constraintBottom_toTopOf="@+id/profile_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars[2]" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

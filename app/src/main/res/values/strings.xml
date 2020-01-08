@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rider</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_order_title">Orders</string>
+    <string name="nav_history_title">History</string>
+    <string name="nav_profile_title">Profile</string>
+    <string name="nav_transaction_title">Transactions</string>
+</resources>
